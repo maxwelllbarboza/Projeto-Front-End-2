@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.mudar__noite{
+    background-color: #000000;
+      
+   
+}
+.header{
+    align-items: center;
+    background-color: #A785ED;
+    color: #FDFDFD;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;    
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    height: 46px;
+    left: 520px;
+    margin-bottom: 54px;    
+    margin-top: 54px;
+    top: 111px;
+    width: 400px;
+}
+.movies-container{
+    display: flex;
+}
+.btn-prev {
+    padding-right: 20px;
+}
+.btn-next{
+    padding-left: 20px;
+}
+.movies{
+    display: flex;
+    gap: 25px;
+}
+.movie{    
+    width: 180px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.subtitle{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+}
+.movie__info{
+    position: absolute;
+    top: 510px;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    height: 40px;
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.movie__title{  
+    display: flex;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #FDFDFD;
+    align-items: center;
+
+}
+.movie__rating{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FBCD6E;
+    
+}
+
+.highlight{
+    display: flex;
+    gap:40px;
+}
+
+.highlight__video{
+    width: 553px;
+    height: 311px;
+    background-repeat: no-repeat;
+    background-position: left left;
+    background-size: cover;
+
+}
+.highlight__video img{
+    position: relative;
+    left: 45%;
+    top: 40%;
+    color: #FFFFFF;
+}
+.highlight__info{
+    padding: 15px;   
+    width: 400px;
+    height: 311px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.highlight__title, .highlight__rating{
+    color: #E183C8;
+    font-family: Manrope;
+    font-style: normal; 
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+.highlight__title-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.highlight__genre-launch{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 36px;
+    padding-top: 10px;
+    
+}
+.highlight__description{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;    
+    opacity: 0.8;    
+}
+.modal{
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.hidden{
+    display: none;
+}
+.modal__close{
+    position: absolute;
+    right: 100px;
+    top: 100px
+}
+.modal__title{
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+.modal__img{
+    background-size: cover;    
+    width: 700px;
+    height: 400px;
+      
+
+}
+.modal__description{
+    padding-top: 30px; 
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 0px 300px 0px 300px;
+}
+.modal__genre-average{
+    position: absolute;
+    bottom: 100px;
+    right: 200px;  
+    
+}
+.modal__average{
+    padding: 9px 11px;    
+    background: #A785ED;
+    border-radius: 8px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
